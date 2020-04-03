@@ -1,6 +1,11 @@
 # CodeStreamSlackBotJarvis
 Just A Rather Very Intelligent System
 
+# Requirements
+
+The API Token key that Jarvis uses is based on the Slack app called "Bot", found here: https://fortune-demo.slack.com/apps/A0F7YS25R-bots?next_id=0
+
+
 # Dependencies
 
 Jarvis primarily listens for certain types of messages that occur via a helper slack user (what I named Jarvis-Subroutine). Subroutine user is what CodeStream sends events to as, and I send all of those events to a specific channel. Based on the message, Jarvis will respond acccordingly to the user. Jarvis.py expects JARVIS_SUBROUTINE_ID environment variable set with your own subroutine ID (this ID is a Slack ID, unique to the user, and can be found by spinning up Jarvis with a made up Subroutine ID and looking in the console for a new message from your own subroutine/helper, specifically the `id` under `bot profile`). 
