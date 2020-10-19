@@ -137,7 +137,7 @@ def jarvis(**payload):
             d_time = e_time - s_time
             print ("Build time for this go around is " + str(d_time) + "seconds.")
             
-            url = TO_BASE
+            url = TO_BASE + '/report'
 
             payload = "buildtime " + str(d_time) + " source=jarvis"
             
